@@ -12,7 +12,6 @@ def index():
 def home():
     return {"message": "Welcome to the Face Authentication API"}
 
-# REMOVED 'async' here so FastAPI isolates the TensorFlow model tasks safely
 @app.post("/verify")
 def verify_faces(image1: UploadFile = File(...), image2: UploadFile = File(...)):
     # REMOVED 'await' from these lines
