@@ -30,16 +30,6 @@ Activate the environment:
 .\face_env\Scripts\Activate.ps1
 ```
 
-After activation, you should see:
-
-```bash
-(face_env)
-```
-
-at the beginning of your terminal.
-
----
-
 ### 2. Install Dependencies
 
 Create a `requirements.txt` file and add the following packages:
