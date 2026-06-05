@@ -17,11 +17,11 @@ def process_image(image_bytes):
     if img is None:
         return None, None
 
-    # Convert BGR to RGB (FaceNet requires RGB format)
+    # Convert BGR to RGB 
     img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     
     # Use FaceNet's built-in crop utility to find faces
-    # it detects boxes in format: [x, y, width, height]
+    # detects boxes in format: [x, y, width, height]
     detections = embedder.extract(img_rgb, threshold=0.95)
     
     # If no face is detected, return empty values
